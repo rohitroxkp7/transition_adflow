@@ -237,7 +237,7 @@ if 1==1:
   # we first try to not use flag
   print("OKay . Before CFDSOlver")
   CFDSolver = ADFLOW(options=aeroOptions,comm=gcomm)
-  print("OKay . Inside CFDSOlver")
+  print("OKay . Inside CFDSOlver, and gcomm is",gcomm.rank,",comm is,",comm.rank)
   # CFDSolver.setDVGeo(DVGeo)
   # mesh = USMesh(options=meshOptions, comm=comm)
   # CFDSolver.setMesh(mesh)
