@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------
-[[12238,1],1]: A high-performance Open MPI point-to-point messaging module
+[[8621,1],0]: A high-performance Open MPI point-to-point messaging module
 was unable to find any relevant network interfaces:
 
 Module: OpenFabrics (openib)
@@ -11,72 +11,60 @@ lower performance.
 NOTE: You can disable this warning by setting the MCA parameter
 btl_base_warn_component_unused to 0.
 --------------------------------------------------------------------------
-[rohit-MS-7D75:1615772] [[12238,0],0] ORTE_ERROR_LOG: Out of resource in file util/show_help.c at line 507
-[rohit-MS-7D75:1615772] [[12238,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 501
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 513
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Out of resource in file util/show_help.c at line 501
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 513
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Data unpack had inadequate space in file util/show_help.c at line 513
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 513
+[rohit-MS-7D75:1747453] [[8621,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 513
 gcomm.rank: 3
-gcomm.rank: 5
-gcomm.rank: 11
-gcomm.rank: 13
-gcomm.rank: 15
-gcomm.rank: 1
-gcomm.rank: 6
 gcomm.rank: 7
+gcomm.rank: 11
+gcomm.rank: 15
+gcomm.rank: 5
+gcomm.rank: 13
+gcomm.rank: 1
 gcomm.rank: 9
-gcomm.rank: 14
-gcomm.rank: 12
-gcomm.rank: 10
-gcomm.rank: 4
-gcomm.rank: 0
 gcomm.rank: 2
+gcomm.rank: 6
+gcomm.rank: 10
+gcomm.rank: 14
+gcomm.rank: 4
 gcomm.rank: 8
-comm: 0 [True, False]
-comm: 9 [False, True]
-comm: 2 [False, True]
-comm: 0 [False, True]
-comm: 1 [False, True]
-comm: 6 [False, True]
+gcomm.rank: 12
+gcomm.rank: 0
+comm: 11 [False, True]
+OKay . Before CFDSOlver
 comm: 8 [False, True]
+OKay . Before CFDSOlver
+comm: 1 [False, True]
+OKay . Before CFDSOlver
+comm: 2 [False, True]
+OKay . Before CFDSOlver
+comm: 3 [False, True]
+OKay . Before CFDSOlver
+comm: 0 [False, True]
+OKay . Before CFDSOlver
+comm: 5 [False, True]
+OKay . Before CFDSOlver
+comm: 6 [False, True]
+OKay . Before CFDSOlver
+comm: 9 [False, True]
+OKay . Before CFDSOlver
+comm: 10 [False, True]
+OKay . Before CFDSOlver
+comm: 0 [True, False]
+OKay . Before CFDSOlver
 comm: 14 [False, True]
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-comm: 12 [False, True]
-OKay . Before CFDSOlver
+comm: 7 [False, True]
+comm: 13 [False, True]
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 comm: 4 [False, True]
+comm: 12 [False, True]
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
-comm: 7 [False, True]
-comm: 3 [False, True]
-OKay . Before CFDSOlver
-comm: 5 [False, True]
-OKay . Before CFDSOlver
-comm: 11 [False, True]
-OKay . Before CFDSOlver
-comm: 13 [False, True]
-OKay . Before CFDSOlver
-comm: 10 [False, True]
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-#
-# ADflow, multiblock structured flow solver
-#
-# This code solves the 3D RANS, laminar NS or Euler equations
-# on multiblock structured hexahedral grids.
-# This is a parallel executable running on 1 processors.
-# It has been compiled with the following options:
-# - Optimized mode.
-# - Size of standard integers: 4 bytes.
-# - Size of standard floating point types: 8 bytes.
-# - With cgns support
-# - With support for signals.
-#
-+----------------------------------------+
-|          All ADFLOW Options:           |
-+----------------------------------------+
 #
 # ADflow, multiblock structured flow solver
 #
@@ -246,141 +234,22 @@ OKay . Before CFDSOlver
                       'cmz',
                       'resturb',
                       'cdp',
-                      'cdv'],
- 'nCycles': 100,
- 'nCyclesCoarse': 500,
- 'nFloodIter': -1,
- 'nRKReset': 5,
- 'nRefine': 10,
- 'nSaveSurface': 1,
- 'nSaveVolume': 1,
- 'nSubiter': 1,
- 'nSubiterTurb': 25,
- 'nTimeStepsCoarse': 48,
- 'nTimeStepsFine': 400,
- 'nbody': False,
- 'nearWallDist': 0.1,
- 'ntransition': True,
- 'numberSolutions': True,
- 'nwingtip': False,
- 'outerPreconIts': 3,
- 'outputDirectory': './output_aero',
- 'outputSurfaceFamily': 'allSurfaces',
- 'overlapFactor': 0.9,
- 'oversetDebugPrint': False,
- 'oversetLoadBalance': True,
- 'oversetPriority': {},
- 'oversetProjTol': 1e-12,
- 'oversetUpdateMode': 'frozen',
- 'pMode': False,
- 'partitionLikeNProc': -1,
- 'partitionOnly': False,
- 'preconditionerSide': 'right',
- 'printAllOptions': True,
- 'printBadlySkewedCells': False,
- 'printIntro': True,
- 'printIterations': True,
- 'printNegativeVolumes': False,
- 'printTiming': True,
- 'printWarnings': True,
- 'qMode': False,
- 'rMode': False,
- 'resAveraging': 'alternate',
- 'restartAdjoint': True,
- 'restartFile': None,
- 'restrictionRelaxation': 0.8,
- 'selfZipCutoff': 120.0,
- 'sepSensorOffset': 0.0,
- 'sepSensorSharpness': 10.0,
- 'setMonitor': False,
- 'skipAfterFailedAdjoint': True,
- 'slicepartname': [],
- 'smoothParameter': 1.5,
- 'smoother': 'DADI',
- 'smoothtransilm': True,
- 'solutionPrecision': 'single',
- 'solutionPrecisionSurface': 'single',
- 'storeConvHist': True,
- 'storeRindLayer': True,
- 'surfaceVariables': ['cp',
-                      'vx',
-                      'vy',
-                      'vz',
-                      'mach',
-                      'cfx',
-                      'mach',
-                      'rho',
-                      'p',
-                      'temp',
-                      'cf',
-                      'yplus',
-                      'blank'],
- 'timeAccuracy': 2,
- 'timeIntegrationScheme': 'BDF',
- 'timeIntervals': 1,
- 'timeLimit': -1.0,
- 'transacouple': 'prodonly',
- 'transi2dim': True,
- 'transislicesnum': [2],
- 'transitionmodel': 'lm',
- 'transitype': 'enbased',
- 'turbResScale': 10000.0,
- 'turbintensityinf': 0.001,
- 'turbulenceModel': 'SA',
- 'turbulenceOrder': 'first order',
- 'turbulenceProduction': 'strain',
- 'use2003SST': True,
- 'useALE': True,
- 'useANKSolver': True,
- 'useApproxWallDistance': True,
- 'useBlockettes': False,
- 'useDiagTSPC': True,
- 'useDissContinuation': False,
- 'useExternalDynamicMesh': False,
- 'useGridMotion': False,
- 'useLinResMonitor': False,
- 'useMatrixFreedrdw': True,
- 'useNKSolver': True,
- 'useOversetWallScaling': False,
- 'useQCR': False,
- 'useRotationSA': False,
- 'useSkewnessCheck': False,
- 'useTSInterpolatedGridVelocity': False,
- 'useWallFunctions': False,
- 'useZipperMesh': True,
- 'usedhawannarashimha': False,
- 'useft2SA': False,
- 'useintermittency': True,
- 'useintermittencygrid': True,
- 'usetransift2sa': False,
- 'usexyzlstate': False,
- 'verifyExtra': True,
- 'verifySpatial': True,
- 'verifyState': True,
- 'vis2': 0.25,
- 'vis2Coarse': 0.5,
- 'vis4': 0.0156,
- 'viscPC': False,
- 'viscWallTreatment': 'constant pressure extrapolation',
- 'viscousSurfaceVelocities': True,
- 'volumeVariables': ['resrho', 'Intermittency', 'cp', 'mach', 'temp', 'rhoe'],
- 'wallDistCutoff': 1e+20,
- 'windAxis': False,
- 'writeSolutionDigits': 3,
- 'writeSolutionEachIter': False,
- 'writeSurfaceSolution': True,
- 'writeTecplotSurfaceSolution': True,
- 'writeVolumeSolution': True,
- 'zipperSurfaceFamily': None}
--> Alpha... 0.000000 
+                     #
+# ADflow, multiblock structured flow solver
 #
-#                      Warning
-# It is assumed that the grid is given in meters.
+# This code solves the 3D RANS, laminar NS or Euler equations
+# on multiblock structured hexahedral grids.
+# This is a parallel executable running on 1 processors.
+# It has been compiled with the following options:
+# - Optimized mode.
+# - Size of standard integers: 4 bytes.
+# - Size of standard floating point types: 8 bytes.
+# - With cgns support
+# - With support for signals.
 #
-#
-# Specified load imbalance tolerance 0.100 achieved.
-# Continuing with 0.000 load imbalance for the cells and 0.000 for the faces
-#
++----------------------------------------+
+|          All ADFLOW Options:           |
++----------------------------------------+
 {'ADPC': True,
  'ANKADPC': False,
  'ANKAMGLevels': 2,
@@ -534,7 +403,142 @@ OKay . Before CFDSOlver
                       'cmz',
                       'resturb',
                       'cdp',
-                      'cdv'],
+                     'cdv'],
+ 'nCycles': 100,
+ 'nCyclesCoarse': 500,
+ 'nFloodIter': -1,
+ 'nRKReset': 5,
+ 'nRefine': 10,
+ 'nSaveSurface': 1,
+ 'nSaveVolume': 1,
+ 'nSubiter': 1,
+ 'nSubiterTurb': 25,
+ 'nTimeStepsCoarse': 48,
+ 'nTimeStepsFine': 400,
+ 'nbody': False,
+ 'nearWallDist': 0.1,
+ 'ntransition': True,
+ 'numberSolutions': True,
+ 'nwingtip': False,
+ 'outerPreconIts': 3,
+ 'outputDirectory': './output_aero',
+ 'outputSurfaceFamily': 'allSurfaces',
+ 'overlapFactor': 0.9,
+ 'oversetDebugPrint': False,
+ 'oversetLoadBalance': True,
+ 'oversetPriority': {},
+ 'oversetProjTol': 1e-12,
+ 'oversetUpdateMode': 'frozen',
+ 'pMode': False,
+ 'partitionLikeNProc': -1,
+ 'partitionOnly': False,
+ 'preconditionerSide': 'right',
+ 'printAllOptions': True,
+ 'printBadlySkewedCells': False,
+ 'printIntro': True,
+ 'printIterations': True,
+ 'printNegativeVolumes': False,
+ 'printTiming': True,
+ 'printWarnings': True,
+ 'qMode': False,
+ 'rMode': False,
+ 'resAveraging': 'alternate',
+ 'restartAdjoint': True,
+ 'restartFile': None,
+ 'restrictionRelaxation': 0.8,
+ 'selfZipCutoff': 120.0,
+ 'sepSensorOffset': 0.0,
+ 'sepSensorSharpness': 10.0,
+ 'setMonitor': False,
+ 'skipAfterFailedAdjoint': True,
+ 'slicepartname': [],
+ 'smoothParameter': 1.5,
+ 'smoother': 'DADI',
+ 'smoothtransilm': True,
+ 'solutionPrecision': 'single',
+ 'solutionPrecisionSurface': 'single',
+ 'storeConvHist': True,
+ 'storeRindLayer': True,
+ 'surfaceVariables': ['cp',
+                      'vx',
+                      'vy',
+                      'vz',
+                      'mach',
+                      'cfx',
+                      'mach',
+                      'rho',
+                      'p',
+                      'temp',
+                      'cf',
+                      'yplus',
+                      'blank'],
+ 'timeAccuracy': 2,
+ 'timeIntegrationScheme': 'BDF',
+ 'timeIntervals': 1,
+ 'timeLimit': -1.0,
+ 'transacouple': 'prodonly',
+ 'transi2dim': True,
+ 'transislicesnum': [2],
+ 'transitionmodel': 'lm',
+ 'transitype': 'enbased',
+ 'turbResScale': 10000.0,
+ 'turbintensityinf': 0.001,
+ 'turbulenceModel': 'SA',
+ 'turbulenceOrder': 'first order',
+ 'turbulenceProduction': 'strain',
+ 'use2003SST': True,
+ 'useALE': True,
+ 'useANKSolver': True,
+ 'useApproxWallDistance': True,
+ 'useBlockettes': False,
+ 'useDiagTSPC': True,
+ 'useDissContinuation': False,
+ 'useExternalDynamicMesh': False,
+ 'useGridMotion': False,
+ 'useLinResMonitor': False,
+ 'useMatrixFreedrdw': True,
+ 'useNKSolver': True,
+ 'useOversetWallScaling': False,
+ 'useQCR': False,
+ 'useRotationSA': False,
+ 'useSkewnessCheck': False,
+ 'useTSInterpolatedGridVelocity': False,
+ 'useWallFunctions': False,
+ 'useZipperMesh': True,
+ 'usedhawannarashimha': False,
+ 'useft2SA': False,
+ 'useintermittency': True,
+ 'useintermittencygrid': True,
+ 'usetransift2sa': False,
+ 'usexyzlstate': False,
+ 'verifyExtra': True,
+ 'verifySpatial': True,
+ 'verifyState': True,
+ 'vis2': 0.25,
+ 'vis2Coarse': 0.5,
+ 'vis4': 0.0156,
+ 'viscPC': False,
+ 'viscWallTreatment': 'constant pressure extrapolation',
+ 'viscousSurfaceVelocities': True,
+ 'volumeVariables': ['resrho', 'Intermittency', 'cp', 'mach', 'temp', 'rhoe'],
+ 'wallDistCutoff': 1e+20,
+ 'windAxis': False,
+ 'writeSolutionDigits': 3,
+ 'writeSolutionEachIter': False,
+ 'writeSurfaceSolution': True,
+ 'writeTecplotSurfaceSolution': True,
+ 'writeVolumeSolution': True,
+ 'zipperSurfaceFamily': None} 
+-> Alpha... 0.000000 
+#
+#                      Warning
+# It is assumed that the grid is given in meters.
+#
+#
+# Specified load imbalance tolerance 0.100 achieved.
+# Continuing with 0.005 load imbalance for the cells and 0.004 for the faces
+#
+ 'cdv'],
  'nCycles': 100,
  'nCyclesCoarse': 500,
  'nFloodIter': -1,
@@ -667,7 +671,7 @@ OKay . Before CFDSOlver
 #
 #
 # Specified load imbalance tolerance 0.100 achieved.
-# Continuing with 0.005 load imbalance for the cells and 0.004 for the faces
+# Continuing with 0.000 load imbalance for the cells and 0.000 for the faces
 #
 #
 # Grid level: 1, Total number of cells: 35968
@@ -699,19 +703,19 @@ OKay . Before CFDSOlver
 |
 | Initialization Times:
 |
-| Library Load Time             :      0.116 sec
+| Library Load Time             :      0.072 sec
 | Set Defaults Time             :      0.000 sec
-| Base Class Init Time          :      0.011 sec
-| Introductory Time             :      0.136 sec
-| Partitioning Time             :      0.015 sec
-| Preprocessing Time            :      0.974 sec
-| Family Setup Time             :      0.014 sec
+| Base Class Init Time          :      0.001 sec
+| Introductory Time             :      0.051 sec
+| Partitioning Time             :      0.004 sec
+| Preprocessing Time            :      1.085 sec
+| Family Setup Time             :      0.000 sec
 | Cut Callback Time             :      0.000 sec
 | Explicit Surface Cut Time     :      0.000 sec
-| Overset Preprocessing Time    :      0.000 sec
-| Initialize Flow Time          :      0.092 sec
+| Overset Preprocessing Time    :      0.004 sec
+| Initialize Flow Time          :      0.089 sec
 |
-| Total Init Time               :      1.360 sec
+| Total Init Time               :      1.308 sec
 +--------------------------------------------------+
 OKay . Inside CFDSOlver, and gcomm is 0 ,comm is, 0
 
@@ -720,113 +724,68 @@ OKay . Inside CFDSOlver, and gcomm is 0 ,comm is, 0
 | boundary conditions for the zipper mesh.                                     |
 +------------------------------------------------------------------------------+
 
-+----------------------------------------+
-|       All pyAeroTransi Options:        |
-+----------------------------------------+
-{'adjointdamp0': 1.0,
- 'adjointdivtol': 1000000.0,
- 'adjointkspsolver': 'fgmres',
- 'adjointpc': 'BJ',
- 'adjointreltol': 1e-07,
- 'adjointsolver': 'KSP',
- 'damp0': 1.0,
- 'damplb': 0.2,
- 'lfsubspacesize': 40,
- 'mdgroup': None,
- 'monitorvars': ['cl', 'cd', 'tr'],
- 'nadjointiter': 100,
- 'nlfiter': 3,
- 'outputdir': './output_aero',
- 'printtiming': True,
- 'reltol': 0.001,
- 'resnormtr': 1000000000000.0,
- 'restartadjoint': True,
- 'saveiterations': True,
- 'useaitkenacceleration': True,
- 'writeiterationsolutions': False,
- 'writesolution': True}
-[rohit-MS-7D75:1615772] 13 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
-[rohit-MS-7D75:1615772] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
++----------------------------------------------------------------------+
+|  Switching to Aero Problem: test_mach0.19_alpha0.7498                |
++----------------------------------------------------------------------+
+[rohit-MS-7D75:1747453] 9 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[rohit-MS-7D75:1747453] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+OKay . Inside CFDSOlver, and gcomm is 15 ,comm is, 14
 +--------------------------------------------------+
-OKay . Inside CFDSOlver, and gcomm is 11 ,comm is, 10
 |
 | Initialization Times:
 |
-| Library Load Time             :      0.067 sec
+| Library Load Time             :      0.072 sec
 | Set Defaults Time             :      0.000 sec
 | Base Class Init Time          :      0.001 sec
-| Introductory Time             :      0.200 sec
-| Partitioning Time             :      0.125 sec
-| Preprocessing Time            :      3.604 sec
-OKay . Inside CFDSOlver, and gcomm is 13 ,comm is, 12
-OKay . Inside CFDSOlver, and gcomm is 2 ,comm is, 1
-OKay . Inside CFDSOlver, and gcomm is 8 ,comm is, 7
-OKay . Inside CFDSOlver, and gcomm is 12 ,comm is, 11
+| Introductory Time             :      0.049 sec
+| Partitioning Time             :      0.049 sec
+| Preprocessing Time            :      2.566 sec
 | Family Setup Time             :      0.000 sec
 | Cut Callback Time             :      0.000 sec
 | Explicit Surface Cut Time     :      0.000 sec
 | Overset Preprocessing Time    :      0.000 sec
-| Initialize Flow Time          :      0.020 sec
+| Initialize Flow Time          :      0.010 sec
 |
-| Total Init Time               :      4.018 sec
+| Total Init Time               :      2.747 sec
 +--------------------------------------------------+
-OKay . Inside CFDSOlver, and gcomm is 1 ,comm is, 0
-OKay . Inside CFDSOlver, and gcomm is 15 ,comm is, 14
-OKay . Inside CFDSOlver, and gcomm is 4 ,comm is, 3
-OKay . Inside CFDSOlver, and gcomm is 7 ,comm is, 6
-OKay . Inside CFDSOlver, and gcomm is 14 ,comm is, 13
+OKay . Inside CFDSOlver, and gcomm is 2 ,comm is, 1
 OKay . Inside CFDSOlver, and gcomm is 3 ,comm is, 2
-OKay . Inside CFDSOlver, and gcomm is 10 ,comm is, 9
-OKay . Inside CFDSOlver, and gcomm is 5 ,comm is, 4
+OKay . Inside CFDSOlver, and gcomm is 13 ,comm is, 12
 OKay . Inside CFDSOlver, and gcomm is 6 ,comm is, 5
+OKay . Inside CFDSOlver, and gcomm is 14 ,comm is, 13
+OKay . Inside CFDSOlver, and gcomm is 7 ,comm is, 6
+OKay . Inside CFDSOlver, and gcomm is 10 ,comm is, 9
+OKay . Inside CFDSOlver, and gcomm is 11 ,comm is, 10
+OKay . Inside CFDSOlver, and gcomm is 5 ,comm is, 4
+OKay . Inside CFDSOlver, and gcomm is 12 ,comm is, 11
 OKay . Inside CFDSOlver, and gcomm is 9 ,comm is, 8
+OKay . Inside CFDSOlver, and gcomm is 1 ,comm is, 0
 
 +------------------------------------------------------------------------------+
 | pyADFLOW Warning: 'zipperSurfaceFamily' option was not given. Using all wall |
 | boundary conditions for the zipper mesh.                                     |
 +------------------------------------------------------------------------------+
 
-+----------------------------------------------------------------------+
-|  Switching to Aero Problem: test_mach0.19_alpha0.7498                |
-+----------------------------------------------------------------------+
-+----------------------------------------+
-|       All pyAeroTransi Options:        |
-+----------------------------------------+
-{'adjointdamp0': 1.0,
- 'adjointdivtol': 1000000.0,
- 'adjointkspsolver': 'fgmres',
- 'adjointpc': 'BJ',
- 'adjointreltol': 1e-07,
- 'adjointsolver': 'KSP',
- 'damp0': 1.0,
- 'damplb': 0.2,
- 'lfsubspacesize': 40,
- 'mdgroup': None,
- 'monitorvars': ['cl', 'cd', 'tr'],
- 'nadjointiter': 100,
- 'nlfiter': 3,
- 'outputdir': './output_aero',
- 'printtiming': True,
- 'reltol': 0.001,
- 'resnormtr': 1000000000000.0,
- 'restartadjoint': True,
- 'saveiterations': True,
- 'useaitkenacceleration': True,
- 'writeiterationsolutions': False,
- 'writesolution': True}
+OKay . Inside CFDSOlver, and gcomm is 4 ,comm is, 3
+OKay . Inside CFDSOlver, and gcomm is 8 ,comm is, 7
 +----------------------------------------------------------------------+
 |  Switching to Aero Problem: test_mach0.19_alpha0.7498                |
 +----------------------------------------------------------------------+
 Traceback (most recent call last):
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
 Traceback (most recent call last):
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
 Traceback (most recent call last):
@@ -841,130 +800,125 @@ Traceback (most recent call last):
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
 Traceback (most recent call last):
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
 Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
     CFDSolver(atp)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-Traceback (most recent call last):
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
   File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
     CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
     self.setAeroProblem(aeroProblem, releaseAdjointMemory)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-Traceback (most recent call last):
-  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
     CFDSolver(atp)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
     self.setAeroProblem(aeroProblem, releaseAdjointMemory)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-Traceback (most recent call last):
-  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
     self.setAeroProblem(aeroProblem, releaseAdjointMemory)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
     self.setAeroProblem(aeroProblem, releaseAdjointMemory)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
     self._setAeroProblemData(aeroProblem)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
     if "adflow" in AP.solverOptions:
 AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-Traceback (most recent call last):
-  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    if "adflow" in AP.solverOptions:
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
     self.setAeroProblem(aeroProblem, releaseAdjointMemory)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
-Traceback (most recent call last):
-  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
-    self._setAeroProblemData(aeroProblem)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
     if "adflow" in AP.solverOptions:
 AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-Traceback (most recent call last):
-  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
-    CFDSolver(atp)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
-    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
-  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
     self._setAeroProblemData(aeroProblem)
   File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
     if "adflow" in AP.solverOptions:
 AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
-    if "adflow" in AP.solverOptions:
-AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
     if "adflow" in AP.solverOptions:
 AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
 Traceback (most recent call last):
@@ -985,6 +939,6 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun detected that one or more processes exited with non-zero status, thus causing
 the job to be terminated. The first process to do so was:
 
-  Process name: [[12238,1],1]
+  Process name: [[8621,1],1]
   Exit code:    1
 --------------------------------------------------------------------------
