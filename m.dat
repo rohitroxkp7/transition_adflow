@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------
+[[39164,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: rohit-MS-7D75
+
+Another transport will be used instead, although this may result in
+lower performance.
+
+NOTE: You can disable this warning by setting the MCA parameter
+btl_base_warn_component_unused to 0.
+--------------------------------------------------------------------------
+gcomm.rank: 0
+comm: 0 [True, False]
+gcomm.rank: 1
+comm: 0 [False, True]
+gcomm.rank: 2
+comm: 1 [False, True]
+gcomm.rank: 3
+comm: 2 [False, True]
+gcomm.rank: 4
+comm: 3 [False, True]
+gcomm.rank: 5
+comm: 4 [False, True]
+gcomm.rank: 6
+comm: 5 [False, True]
+gcomm.rank: 7
+comm: 6 [False, True]
+gcomm.rank: 8
+comm: 7 [False, True]
+gcomm.rank: 9
+comm: 8 [False, True]
+gcomm.rank: 10
+comm: 9 [False, True]
+gcomm.rank: 11
+comm: 10 [False, True]
+gcomm.rank: 12
+comm: 11 [False, True]
+gcomm.rank: 13
+comm: 12 [False, True]
+gcomm.rank: 14
+comm: 13 [False, True]
+gcomm.rank: 15
+comm: 14 [False, True]
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
++----------------------------------------+
+|       All pyAeroTransi Options:        |
++----------------------------------------+
+{'adjointdamp0': 1.0,
+ 'adjointdivtol': 1000000.0,
+ 'adjointkspsolver': 'fgmres',
+ 'adjointpc': 'BJ',
+ 'adjointreltol': 1e-07,
+ 'adjointsolver': 'KSP',
+ 'damp0': 1.0,
+ 'damplb': 0.2,
+ 'lfsubspacesize': 40,
+ 'mdgroup': None,
+ 'monitorvars': ['cl', 'cd', 'tr'],
+ 'nadjointiter': 100,
+ 'nlfiter': 3,
+ 'outputdir': './output_aero',
+ 'printtiming': True,
+ 'reltol': 0.001,
+ 'resnormtr': 1000000000000.0,
+ 'restartadjoint': True,
+ 'saveiterations': True,
+ 'useaitkenacceleration': True,
+ 'writeiterationsolutions': False,
+ 'writesolution': True}
+[rohit-MS-7D75:2625694] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[rohit-MS-7D75:2625694] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
