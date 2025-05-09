@@ -236,7 +236,7 @@ atp = AeroTransiProblem(ap,tp)
 if 1==1:
   # we first try to not use flag
   print("OKay . Before CFDSOlver")
-  CFDSolver = ADFLOW(options=aeroOptions,comm=gcomm)
+  CFDSolver = ADFLOW(options=aeroOptions,comm=comm)
   print("OKay . Inside CFDSOlver, and gcomm is",gcomm.rank,",comm is,",comm.rank)
   # CFDSolver.setDVGeo(DVGeo)
   # mesh = USMesh(options=meshOptions, comm=comm)
@@ -245,8 +245,8 @@ if 1==1:
   pos = np.array([0.5])
   CFDSolver.addSlices(spanDirection,pos,sliceType='absolute')
   transiSolver = None
-# if flags[transiID]:
-  transiSolver = TransitionCalc(options=transiOptions,comm=gcomm)
+if flags[transiID]:
+  transiSolver = TransitionCalc(options=transiOptions,comm=comm)
   # CFDSolver = None
 # define Aero transi solver
 AT = AeroTransi(CFDSolver, transiSolver,gcomm,options=lfOptions)
