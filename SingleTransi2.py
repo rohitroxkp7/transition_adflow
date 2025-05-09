@@ -249,13 +249,13 @@ if flags[transiID]:
   transiSolver = TransitionCalc(options=transiOptions,comm=comm)
   # CFDSolver = None
 # define Aero transi solver
-# AT = AeroTransi(CFDSolver, transiSolver,gcomm,options=lfOptions)
+AT = AeroTransi(CFDSolver, transiSolver,gcomm,options=lfOptions)
 # ======================================================================
 #     Solve Functions:
 # ======================================================================
 funcs = {}
-CFDSolver(atp)
-CFDSolver.evalFunctions(atp,funcs)
+CFDSolver(ap)
+CFDSolver.evalFunctions(ap,funcs)
 # AT(atp)
 # AT.evalFunctions(atp, funcs)
 if(gcomm.rank == 0):
