@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------
-[[39164,1],0]: A high-performance Open MPI point-to-point messaging module
+[[12238,1],1]: A high-performance Open MPI point-to-point messaging module
 was unable to find any relevant network interfaces:
 
 Module: OpenFabrics (openib)
@@ -11,53 +11,715 @@ lower performance.
 NOTE: You can disable this warning by setting the MCA parameter
 btl_base_warn_component_unused to 0.
 --------------------------------------------------------------------------
-gcomm.rank: 0
-comm: 0 [True, False]
-gcomm.rank: 1
-comm: 0 [False, True]
-gcomm.rank: 2
-comm: 1 [False, True]
+[rohit-MS-7D75:1615772] [[12238,0],0] ORTE_ERROR_LOG: Out of resource in file util/show_help.c at line 507
+[rohit-MS-7D75:1615772] [[12238,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file util/show_help.c at line 501
 gcomm.rank: 3
-comm: 2 [False, True]
-gcomm.rank: 4
-comm: 3 [False, True]
 gcomm.rank: 5
-comm: 4 [False, True]
-gcomm.rank: 6
-comm: 5 [False, True]
-gcomm.rank: 7
-comm: 6 [False, True]
-gcomm.rank: 8
-comm: 7 [False, True]
-gcomm.rank: 9
-comm: 8 [False, True]
-gcomm.rank: 10
-comm: 9 [False, True]
 gcomm.rank: 11
-comm: 10 [False, True]
-gcomm.rank: 12
-comm: 11 [False, True]
 gcomm.rank: 13
-comm: 12 [False, True]
-gcomm.rank: 14
-comm: 13 [False, True]
 gcomm.rank: 15
+gcomm.rank: 1
+gcomm.rank: 6
+gcomm.rank: 7
+gcomm.rank: 9
+gcomm.rank: 14
+gcomm.rank: 12
+gcomm.rank: 10
+gcomm.rank: 4
+gcomm.rank: 0
+gcomm.rank: 2
+gcomm.rank: 8
+comm: 0 [True, False]
+comm: 9 [False, True]
+comm: 2 [False, True]
+comm: 0 [False, True]
+comm: 1 [False, True]
+comm: 6 [False, True]
+comm: 8 [False, True]
 comm: 14 [False, True]
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
+comm: 12 [False, True]
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
+comm: 4 [False, True]
+OKay . Before CFDSOlver
+OKay . Before CFDSOlver
+comm: 7 [False, True]
+comm: 3 [False, True]
+OKay . Before CFDSOlver
+comm: 5 [False, True]
+OKay . Before CFDSOlver
+comm: 11 [False, True]
+OKay . Before CFDSOlver
+comm: 13 [False, True]
+OKay . Before CFDSOlver
+comm: 10 [False, True]
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
 OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
-OKay . Before CFDSOlver
+#
+# ADflow, multiblock structured flow solver
+#
+# This code solves the 3D RANS, laminar NS or Euler equations
+# on multiblock structured hexahedral grids.
+# This is a parallel executable running on 1 processors.
+# It has been compiled with the following options:
+# - Optimized mode.
+# - Size of standard integers: 4 bytes.
+# - Size of standard floating point types: 8 bytes.
+# - With cgns support
+# - With support for signals.
+#
++----------------------------------------+
+|          All ADFLOW Options:           |
++----------------------------------------+
+#
+# ADflow, multiblock structured flow solver
+#
+# This code solves the 3D RANS, laminar NS or Euler equations
+# on multiblock structured hexahedral grids.
+# This is a parallel executable running on 15 processors.
+# It has been compiled with the following options:
+# - Optimized mode.
+# - Size of standard integers: 4 bytes.
+# - Size of standard floating point types: 8 bytes.
+# - With cgns support
+# - With support for signals.
+#
++----------------------------------------+
+|          All ADFLOW Options:           |
++----------------------------------------+
+{'ADPC': True,
+ 'ANKADPC': False,
+ 'ANKAMGLevels': 2,
+ 'ANKAMGNSmooth': 1,
+ 'ANKASMOverlap': 1,
+ 'ANKCFL0': 5.0,
+ 'ANKCFLCutback': 0.5,
+ 'ANKCFLExponent': 0.5,
+ 'ANKCFLFactor': 10.0,
+ 'ANKCFLLimit': 100000.0,
+ 'ANKCFLMin': 1.0,
+ 'ANKCFLReset': True,
+ 'ANKCharTimeStepType': 'None',
+ 'ANKConstCFLStep': 0.4,
+ 'ANKCoupledSwitchTol': 1e-16,
+ 'ANKGlobalPreconditioner': 'additive Schwarz',
+ 'ANKInnerPreconIts': 1,
+ 'ANKJacobianLag': 10,
+ 'ANKLinResMax': 0.1,
+ 'ANKLinearSolveBuffer': 0.01,
+ 'ANKLinearSolveTol': 0.05,
+ 'ANKMaxIter': 60,
+ 'ANKNSubiterTurb': 1,
+ 'ANKOuterPreconIts': 1,
+ 'ANKPCILUFill': 2,
+ 'ANKPCUpdateCutoff': 1e-16,
+ 'ANKPCUpdateTol': 0.5,
+ 'ANKPCUpdateTolAfterCutoff': 0.0001,
+ 'ANKPhysicalLSTol': 0.2,
+ 'ANKPhysicalLSTolTurb': 0.99,
+ 'ANKSecondOrdSwitchTol': 0.001,
+ 'ANKStepFactor': 0.5,
+ 'ANKStepMin': 0.01,
+ 'ANKSubspaceSize': -1,
+ 'ANKSwitchTol': 1000.0,
+ 'ANKTurbCFLScale': 1.0,
+ 'ANKTurbKSPDebug': False,
+ 'ANKUnsteadyLSTol': 1.0,
+ 'ANKUseApproxTurb': False,
+ 'ANKUseFullVisc': True,
+ 'ANKUseMatrixFree': True,
+ 'ANKUseTurbDADI': True,
+ 'ASMOverlap': 1,
+ 'CFL': 1.5,
+ 'CFLCoarse': 1.25,
+ 'CFLLimit': 1.5,
+ 'GMRESOrthogonalizationType': 'modified Gram-Schmidt',
+ 'ILUFill': 2,
+ 'L2Convergence': 1e-08,
+ 'L2ConvergenceCoarse': 0.01,
+ 'L2ConvergenceRel': 1e-16,
+ 'MGCycle': 'SG',
+ 'MGStartLevel': -1,
+ 'NKADPC': True,
+ 'NKAMGLevels': 2,
+ 'NKAMGNSmooth': 1,
+ 'NKASMOverlap': 1,
+ 'NKFixedStep': 0.25,
+ 'NKGlobalPreconditioner': 'additive Schwarz',
+ 'NKInnerPreconIts': 2,
+ 'NKJacobianLag': 3,
+ 'NKLS': 'cubic',
+ 'NKLinearSolveTol': 0.3,
+ 'NKOuterPreconIts': 3,
+ 'NKPCILUFill': 2,
+ 'NKSubspaceSize': 100,
+ 'NKSwitchTol': 1e-08,
+ 'NKUseEW': True,
+ 'NKViscPC': False,
+ 'RKReset': False,
+ 'TSStability': False,
+ 'acousticScaleFactor': 1.0,
+ 'adjointAMGLevels': 2,
+ 'adjointAMGNSmooth': 1,
+ 'adjointDivTol': 100000.0,
+ 'adjointL2Convergence': 1e-08,
+ 'adjointL2ConvergenceAbs': 1e-16,
+ 'adjointL2ConvergenceRel': 1e-16,
+ 'adjointMaxIter': 1000,
+ 'adjointMaxL2DeviationFactor': 1.0,
+ 'adjointMonitorStep': 10,
+ 'adjointSolver': 'GMRES',
+ 'adjointSubspaceSize': 150,
+ 'alphaFollowing': True,
+ 'alphaMode': False,
+ 'altitudeMode': False,
+ 'applyAdjointPCSubspaceSize': 15,
+ 'applyPCSubspaceSize': 10,
+ 'approxPC': True,
+ 'backgroundVolScale': 1.0,
+ 'betaMode': False,
+ 'blockSplitting': True,
+ 'boomaltitude': 10000.0,
+ 'boomsimulated': False,
+ 'boundarylayerthickness': 0.05,
+ 'cavExponent': 0,
+ 'cavSensorOffset': 0.0,
+ 'cavSensorSharpness': 10.0,
+ 'cavitationNumber': 1.4,
+ 'closedSurfaceFamilies': None,
+ 'coarseDiscretization': 'central plus scalar dissipation',
+ 'computeCavitation': False,
+ 'coupledSolution': False,
+ 'cpMinRho': 100.0,
+ 'cutCallback': None,
+ 'debugZipper': False,
+ 'deltaT': 0.01,
+ 'designSurfaceFamily': None,
+ 'discretization': 'central plus scalar dissipation',
+ 'dissContMagnitude': 1.0,
+ 'dissContMidpoint': 3.0,
+ 'dissContSharpness': 3.0,
+ 'dissipationLumpingParameter': 6.0,
+ 'dissipationScalingExponent': 0.67,
+ 'eddyVisInfRatio': 0.009,
+ 'equationMode': 'steady',
+ 'equationType': 'RANS',
+ 'eulerWallTreatment': 'linear pressure extrapolation',
+ 'explicitSurfaceCallback': None,
+ 'firstRun': True,
+ 'flowType': 'external',
+ 'forcesAsTractions': True,
+ 'frozenTurbulence': False,
+ 'frozentransiiter': -1,
+ 'globalPreconditioner': 'additive Schwarz',
+ 'gridFile': 'test_rans.cgns',
+ 'gridPrecision': 'double',
+ 'gridPrecisionSurface': 'single',
+ 'infChangeCorrection': True,
+ 'infChangeCorrectionTol': 1e-12,
+ 'infChangeCorrectionType': 'offset',
+ 'initintermittencyone': False,
+ 'innerPreconIts': 1,
+ 'isoVariables': [],
+ 'isosurface': {},
+ 'liftIndex': 3,
+ 'limiter': 'van Albada',
+ 'loadBalanceIter': 10,
+ 'loadImbalance': 0.1,
+ 'localPreconditioner': 'ILU',
+ 'lowSpeedPreconditioner': False,
+ 'machMode': False,
+ 'matrixOrdering': 'RCM',
+ 'maxL2DeviationFactor': 1.0,
+ 'meshMaxSkewness': 1.0,
+ 'meshSurfaceFamily': None,
+ 'monitorVariables': ['resrho',
+                      'cl',
+                      'cpu',
+                      'cd',
+                      'cmz',
+                      'resturb',
+                      'cdp',
+                      'cdv'],
+ 'nCycles': 100,
+ 'nCyclesCoarse': 500,
+ 'nFloodIter': -1,
+ 'nRKReset': 5,
+ 'nRefine': 10,
+ 'nSaveSurface': 1,
+ 'nSaveVolume': 1,
+ 'nSubiter': 1,
+ 'nSubiterTurb': 25,
+ 'nTimeStepsCoarse': 48,
+ 'nTimeStepsFine': 400,
+ 'nbody': False,
+ 'nearWallDist': 0.1,
+ 'ntransition': True,
+ 'numberSolutions': True,
+ 'nwingtip': False,
+ 'outerPreconIts': 3,
+ 'outputDirectory': './output_aero',
+ 'outputSurfaceFamily': 'allSurfaces',
+ 'overlapFactor': 0.9,
+ 'oversetDebugPrint': False,
+ 'oversetLoadBalance': True,
+ 'oversetPriority': {},
+ 'oversetProjTol': 1e-12,
+ 'oversetUpdateMode': 'frozen',
+ 'pMode': False,
+ 'partitionLikeNProc': -1,
+ 'partitionOnly': False,
+ 'preconditionerSide': 'right',
+ 'printAllOptions': True,
+ 'printBadlySkewedCells': False,
+ 'printIntro': True,
+ 'printIterations': True,
+ 'printNegativeVolumes': False,
+ 'printTiming': True,
+ 'printWarnings': True,
+ 'qMode': False,
+ 'rMode': False,
+ 'resAveraging': 'alternate',
+ 'restartAdjoint': True,
+ 'restartFile': None,
+ 'restrictionRelaxation': 0.8,
+ 'selfZipCutoff': 120.0,
+ 'sepSensorOffset': 0.0,
+ 'sepSensorSharpness': 10.0,
+ 'setMonitor': False,
+ 'skipAfterFailedAdjoint': True,
+ 'slicepartname': [],
+ 'smoothParameter': 1.5,
+ 'smoother': 'DADI',
+ 'smoothtransilm': True,
+ 'solutionPrecision': 'single',
+ 'solutionPrecisionSurface': 'single',
+ 'storeConvHist': True,
+ 'storeRindLayer': True,
+ 'surfaceVariables': ['cp',
+                      'vx',
+                      'vy',
+                      'vz',
+                      'mach',
+                      'cfx',
+                      'mach',
+                      'rho',
+                      'p',
+                      'temp',
+                      'cf',
+                      'yplus',
+                      'blank'],
+ 'timeAccuracy': 2,
+ 'timeIntegrationScheme': 'BDF',
+ 'timeIntervals': 1,
+ 'timeLimit': -1.0,
+ 'transacouple': 'prodonly',
+ 'transi2dim': True,
+ 'transislicesnum': [2],
+ 'transitionmodel': 'lm',
+ 'transitype': 'enbased',
+ 'turbResScale': 10000.0,
+ 'turbintensityinf': 0.001,
+ 'turbulenceModel': 'SA',
+ 'turbulenceOrder': 'first order',
+ 'turbulenceProduction': 'strain',
+ 'use2003SST': True,
+ 'useALE': True,
+ 'useANKSolver': True,
+ 'useApproxWallDistance': True,
+ 'useBlockettes': False,
+ 'useDiagTSPC': True,
+ 'useDissContinuation': False,
+ 'useExternalDynamicMesh': False,
+ 'useGridMotion': False,
+ 'useLinResMonitor': False,
+ 'useMatrixFreedrdw': True,
+ 'useNKSolver': True,
+ 'useOversetWallScaling': False,
+ 'useQCR': False,
+ 'useRotationSA': False,
+ 'useSkewnessCheck': False,
+ 'useTSInterpolatedGridVelocity': False,
+ 'useWallFunctions': False,
+ 'useZipperMesh': True,
+ 'usedhawannarashimha': False,
+ 'useft2SA': False,
+ 'useintermittency': True,
+ 'useintermittencygrid': True,
+ 'usetransift2sa': False,
+ 'usexyzlstate': False,
+ 'verifyExtra': True,
+ 'verifySpatial': True,
+ 'verifyState': True,
+ 'vis2': 0.25,
+ 'vis2Coarse': 0.5,
+ 'vis4': 0.0156,
+ 'viscPC': False,
+ 'viscWallTreatment': 'constant pressure extrapolation',
+ 'viscousSurfaceVelocities': True,
+ 'volumeVariables': ['resrho', 'Intermittency', 'cp', 'mach', 'temp', 'rhoe'],
+ 'wallDistCutoff': 1e+20,
+ 'windAxis': False,
+ 'writeSolutionDigits': 3,
+ 'writeSolutionEachIter': False,
+ 'writeSurfaceSolution': True,
+ 'writeTecplotSurfaceSolution': True,
+ 'writeVolumeSolution': True,
+ 'zipperSurfaceFamily': None}
+-> Alpha... 0.000000 
+#
+#                      Warning
+# It is assumed that the grid is given in meters.
+#
+#
+# Specified load imbalance tolerance 0.100 achieved.
+# Continuing with 0.000 load imbalance for the cells and 0.000 for the faces
+#
+{'ADPC': True,
+ 'ANKADPC': False,
+ 'ANKAMGLevels': 2,
+ 'ANKAMGNSmooth': 1,
+ 'ANKASMOverlap': 1,
+ 'ANKCFL0': 5.0,
+ 'ANKCFLCutback': 0.5,
+ 'ANKCFLExponent': 0.5,
+ 'ANKCFLFactor': 10.0,
+ 'ANKCFLLimit': 100000.0,
+ 'ANKCFLMin': 1.0,
+ 'ANKCFLReset': True,
+ 'ANKCharTimeStepType': 'None',
+ 'ANKConstCFLStep': 0.4,
+ 'ANKCoupledSwitchTol': 1e-16,
+ 'ANKGlobalPreconditioner': 'additive Schwarz',
+ 'ANKInnerPreconIts': 1,
+ 'ANKJacobianLag': 10,
+ 'ANKLinResMax': 0.1,
+ 'ANKLinearSolveBuffer': 0.01,
+ 'ANKLinearSolveTol': 0.05,
+ 'ANKMaxIter': 60,
+ 'ANKNSubiterTurb': 1,
+ 'ANKOuterPreconIts': 1,
+ 'ANKPCILUFill': 2,
+ 'ANKPCUpdateCutoff': 1e-16,
+ 'ANKPCUpdateTol': 0.5,
+ 'ANKPCUpdateTolAfterCutoff': 0.0001,
+ 'ANKPhysicalLSTol': 0.2,
+ 'ANKPhysicalLSTolTurb': 0.99,
+ 'ANKSecondOrdSwitchTol': 0.001,
+ 'ANKStepFactor': 0.5,
+ 'ANKStepMin': 0.01,
+ 'ANKSubspaceSize': -1,
+ 'ANKSwitchTol': 1000.0,
+ 'ANKTurbCFLScale': 1.0,
+ 'ANKTurbKSPDebug': False,
+ 'ANKUnsteadyLSTol': 1.0,
+ 'ANKUseApproxTurb': False,
+ 'ANKUseFullVisc': True,
+ 'ANKUseMatrixFree': True,
+ 'ANKUseTurbDADI': True,
+ 'ASMOverlap': 1,
+ 'CFL': 1.5,
+ 'CFLCoarse': 1.25,
+ 'CFLLimit': 1.5,
+ 'GMRESOrthogonalizationType': 'modified Gram-Schmidt',
+ 'ILUFill': 2,
+ 'L2Convergence': 1e-08,
+ 'L2ConvergenceCoarse': 0.01,
+ 'L2ConvergenceRel': 1e-16,
+ 'MGCycle': 'SG',
+ 'MGStartLevel': -1,
+ 'NKADPC': True,
+ 'NKAMGLevels': 2,
+ 'NKAMGNSmooth': 1,
+ 'NKASMOverlap': 1,
+ 'NKFixedStep': 0.25,
+ 'NKGlobalPreconditioner': 'additive Schwarz',
+ 'NKInnerPreconIts': 2,
+ 'NKJacobianLag': 3,
+ 'NKLS': 'cubic',
+ 'NKLinearSolveTol': 0.3,
+ 'NKOuterPreconIts': 3,
+ 'NKPCILUFill': 2,
+ 'NKSubspaceSize': 100,
+ 'NKSwitchTol': 1e-08,
+ 'NKUseEW': True,
+ 'NKViscPC': False,
+ 'RKReset': False,
+ 'TSStability': False,
+ 'acousticScaleFactor': 1.0,
+ 'adjointAMGLevels': 2,
+ 'adjointAMGNSmooth': 1,
+ 'adjointDivTol': 100000.0,
+ 'adjointL2Convergence': 1e-08,
+ 'adjointL2ConvergenceAbs': 1e-16,
+ 'adjointL2ConvergenceRel': 1e-16,
+ 'adjointMaxIter': 1000,
+ 'adjointMaxL2DeviationFactor': 1.0,
+ 'adjointMonitorStep': 10,
+ 'adjointSolver': 'GMRES',
+ 'adjointSubspaceSize': 150,
+ 'alphaFollowing': True,
+ 'alphaMode': False,
+ 'altitudeMode': False,
+ 'applyAdjointPCSubspaceSize': 15,
+ 'applyPCSubspaceSize': 10,
+ 'approxPC': True,
+ 'backgroundVolScale': 1.0,
+ 'betaMode': False,
+ 'blockSplitting': True,
+ 'boomaltitude': 10000.0,
+ 'boomsimulated': False,
+ 'boundarylayerthickness': 0.05,
+ 'cavExponent': 0,
+ 'cavSensorOffset': 0.0,
+ 'cavSensorSharpness': 10.0,
+ 'cavitationNumber': 1.4,
+ 'closedSurfaceFamilies': None,
+ 'coarseDiscretization': 'central plus scalar dissipation',
+ 'computeCavitation': False,
+ 'coupledSolution': False,
+ 'cpMinRho': 100.0,
+ 'cutCallback': None,
+ 'debugZipper': False,
+ 'deltaT': 0.01,
+ 'designSurfaceFamily': None,
+ 'discretization': 'central plus scalar dissipation',
+ 'dissContMagnitude': 1.0,
+ 'dissContMidpoint': 3.0,
+ 'dissContSharpness': 3.0,
+ 'dissipationLumpingParameter': 6.0,
+ 'dissipationScalingExponent': 0.67,
+ 'eddyVisInfRatio': 0.009,
+ 'equationMode': 'steady',
+ 'equationType': 'RANS',
+ 'eulerWallTreatment': 'linear pressure extrapolation',
+ 'explicitSurfaceCallback': None,
+ 'firstRun': True,
+ 'flowType': 'external',
+ 'forcesAsTractions': True,
+ 'frozenTurbulence': False,
+ 'frozentransiiter': -1,
+ 'globalPreconditioner': 'additive Schwarz',
+ 'gridFile': 'test_rans.cgns',
+ 'gridPrecision': 'double',
+ 'gridPrecisionSurface': 'single',
+ 'infChangeCorrection': True,
+ 'infChangeCorrectionTol': 1e-12,
+ 'infChangeCorrectionType': 'offset',
+ 'initintermittencyone': False,
+ 'innerPreconIts': 1,
+ 'isoVariables': [],
+ 'isosurface': {},
+ 'liftIndex': 3,
+ 'limiter': 'van Albada',
+ 'loadBalanceIter': 10,
+ 'loadImbalance': 0.1,
+ 'localPreconditioner': 'ILU',
+ 'lowSpeedPreconditioner': False,
+ 'machMode': False,
+ 'matrixOrdering': 'RCM',
+ 'maxL2DeviationFactor': 1.0,
+ 'meshMaxSkewness': 1.0,
+ 'meshSurfaceFamily': None,
+ 'monitorVariables': ['resrho',
+                      'cl',
+                      'cpu',
+                      'cd',
+                      'cmz',
+                      'resturb',
+                      'cdp',
+                      'cdv'],
+ 'nCycles': 100,
+ 'nCyclesCoarse': 500,
+ 'nFloodIter': -1,
+ 'nRKReset': 5,
+ 'nRefine': 10,
+ 'nSaveSurface': 1,
+ 'nSaveVolume': 1,
+ 'nSubiter': 1,
+ 'nSubiterTurb': 25,
+ 'nTimeStepsCoarse': 48,
+ 'nTimeStepsFine': 400,
+ 'nbody': False,
+ 'nearWallDist': 0.1,
+ 'ntransition': True,
+ 'numberSolutions': True,
+ 'nwingtip': False,
+ 'outerPreconIts': 3,
+ 'outputDirectory': './output_aero',
+ 'outputSurfaceFamily': 'allSurfaces',
+ 'overlapFactor': 0.9,
+ 'oversetDebugPrint': False,
+ 'oversetLoadBalance': True,
+ 'oversetPriority': {},
+ 'oversetProjTol': 1e-12,
+ 'oversetUpdateMode': 'frozen',
+ 'pMode': False,
+ 'partitionLikeNProc': -1,
+ 'partitionOnly': False,
+ 'preconditionerSide': 'right',
+ 'printAllOptions': True,
+ 'printBadlySkewedCells': False,
+ 'printIntro': True,
+ 'printIterations': True,
+ 'printNegativeVolumes': False,
+ 'printTiming': True,
+ 'printWarnings': True,
+ 'qMode': False,
+ 'rMode': False,
+ 'resAveraging': 'alternate',
+ 'restartAdjoint': True,
+ 'restartFile': None,
+ 'restrictionRelaxation': 0.8,
+ 'selfZipCutoff': 120.0,
+ 'sepSensorOffset': 0.0,
+ 'sepSensorSharpness': 10.0,
+ 'setMonitor': False,
+ 'skipAfterFailedAdjoint': True,
+ 'slicepartname': [],
+ 'smoothParameter': 1.5,
+ 'smoother': 'DADI',
+ 'smoothtransilm': True,
+ 'solutionPrecision': 'single',
+ 'solutionPrecisionSurface': 'single',
+ 'storeConvHist': True,
+ 'storeRindLayer': True,
+ 'surfaceVariables': ['cp',
+                      'vx',
+                      'vy',
+                      'vz',
+                      'mach',
+                      'cfx',
+                      'mach',
+                      'rho',
+                      'p',
+                      'temp',
+                      'cf',
+                      'yplus',
+                      'blank'],
+ 'timeAccuracy': 2,
+ 'timeIntegrationScheme': 'BDF',
+ 'timeIntervals': 1,
+ 'timeLimit': -1.0,
+ 'transacouple': 'prodonly',
+ 'transi2dim': True,
+ 'transislicesnum': [2],
+ 'transitionmodel': 'lm',
+ 'transitype': 'enbased',
+ 'turbResScale': 10000.0,
+ 'turbintensityinf': 0.001,
+ 'turbulenceModel': 'SA',
+ 'turbulenceOrder': 'first order',
+ 'turbulenceProduction': 'strain',
+ 'use2003SST': True,
+ 'useALE': True,
+ 'useANKSolver': True,
+ 'useApproxWallDistance': True,
+ 'useBlockettes': False,
+ 'useDiagTSPC': True,
+ 'useDissContinuation': False,
+ 'useExternalDynamicMesh': False,
+ 'useGridMotion': False,
+ 'useLinResMonitor': False,
+ 'useMatrixFreedrdw': True,
+ 'useNKSolver': True,
+ 'useOversetWallScaling': False,
+ 'useQCR': False,
+ 'useRotationSA': False,
+ 'useSkewnessCheck': False,
+ 'useTSInterpolatedGridVelocity': False,
+ 'useWallFunctions': False,
+ 'useZipperMesh': True,
+ 'usedhawannarashimha': False,
+ 'useft2SA': False,
+ 'useintermittency': True,
+ 'useintermittencygrid': True,
+ 'usetransift2sa': False,
+ 'usexyzlstate': False,
+ 'verifyExtra': True,
+ 'verifySpatial': True,
+ 'verifyState': True,
+ 'vis2': 0.25,
+ 'vis2Coarse': 0.5,
+ 'vis4': 0.0156,
+ 'viscPC': False,
+ 'viscWallTreatment': 'constant pressure extrapolation',
+ 'viscousSurfaceVelocities': True,
+ 'volumeVariables': ['resrho', 'Intermittency', 'cp', 'mach', 'temp', 'rhoe'],
+ 'wallDistCutoff': 1e+20,
+ 'windAxis': False,
+ 'writeSolutionDigits': 3,
+ 'writeSolutionEachIter': False,
+ 'writeSurfaceSolution': True,
+ 'writeTecplotSurfaceSolution': True,
+ 'writeVolumeSolution': True,
+ 'zipperSurfaceFamily': None}
+-> Alpha... 0.000000 
+#
+#                      Warning
+# It is assumed that the grid is given in meters.
+#
+#
+# Specified load imbalance tolerance 0.100 achieved.
+# Continuing with 0.005 load imbalance for the cells and 0.004 for the faces
+#
+#
+# Grid level: 1, Total number of cells: 35968
+#
++--------------------------------------------------+
+  CGNS Surface Families by Boundary Condition Type
++--------------------------------------------------+
+| Wall Types           : wall 
+| Inflow Types         : 
+| Outflow Types        : 
+| Symmetry Types       : sym 
+| Farfield Types       : far 
+| Overset Types        : 
++--------------------------------------------------+
+#
+# Grid level: 1, Total number of cells: 35968
+#
++--------------------------------------------------+
+  CGNS Surface Families by Boundary Condition Type
++--------------------------------------------------+
+| Wall Types           : wall 
+| Inflow Types         : 
+| Outflow Types        : 
+| Symmetry Types       : sym 
+| Farfield Types       : far 
+| Overset Types        : 
++--------------------------------------------------+
++--------------------------------------------------+
+|
+| Initialization Times:
+|
+| Library Load Time             :      0.116 sec
+| Set Defaults Time             :      0.000 sec
+| Base Class Init Time          :      0.011 sec
+| Introductory Time             :      0.136 sec
+| Partitioning Time             :      0.015 sec
+| Preprocessing Time            :      0.974 sec
+| Family Setup Time             :      0.014 sec
+| Cut Callback Time             :      0.000 sec
+| Explicit Surface Cut Time     :      0.000 sec
+| Overset Preprocessing Time    :      0.000 sec
+| Initialize Flow Time          :      0.092 sec
+|
+| Total Init Time               :      1.360 sec
++--------------------------------------------------+
+OKay . Inside CFDSOlver, and gcomm is 0 ,comm is, 0
+
++------------------------------------------------------------------------------+
+| pyADFLOW Warning: 'zipperSurfaceFamily' option was not given. Using all wall |
+| boundary conditions for the zipper mesh.                                     |
++------------------------------------------------------------------------------+
+
 +----------------------------------------+
 |       All pyAeroTransi Options:        |
 +----------------------------------------+
@@ -83,5 +745,246 @@ OKay . Before CFDSOlver
  'useaitkenacceleration': True,
  'writeiterationsolutions': False,
  'writesolution': True}
-[rohit-MS-7D75:2625694] 15 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
-[rohit-MS-7D75:2625694] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[rohit-MS-7D75:1615772] 13 more processes have sent help message help-mpi-btl-base.txt / btl:no-nics
+[rohit-MS-7D75:1615772] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
++--------------------------------------------------+
+OKay . Inside CFDSOlver, and gcomm is 11 ,comm is, 10
+|
+| Initialization Times:
+|
+| Library Load Time             :      0.067 sec
+| Set Defaults Time             :      0.000 sec
+| Base Class Init Time          :      0.001 sec
+| Introductory Time             :      0.200 sec
+| Partitioning Time             :      0.125 sec
+| Preprocessing Time            :      3.604 sec
+OKay . Inside CFDSOlver, and gcomm is 13 ,comm is, 12
+OKay . Inside CFDSOlver, and gcomm is 2 ,comm is, 1
+OKay . Inside CFDSOlver, and gcomm is 8 ,comm is, 7
+OKay . Inside CFDSOlver, and gcomm is 12 ,comm is, 11
+| Family Setup Time             :      0.000 sec
+| Cut Callback Time             :      0.000 sec
+| Explicit Surface Cut Time     :      0.000 sec
+| Overset Preprocessing Time    :      0.000 sec
+| Initialize Flow Time          :      0.020 sec
+|
+| Total Init Time               :      4.018 sec
++--------------------------------------------------+
+OKay . Inside CFDSOlver, and gcomm is 1 ,comm is, 0
+OKay . Inside CFDSOlver, and gcomm is 15 ,comm is, 14
+OKay . Inside CFDSOlver, and gcomm is 4 ,comm is, 3
+OKay . Inside CFDSOlver, and gcomm is 7 ,comm is, 6
+OKay . Inside CFDSOlver, and gcomm is 14 ,comm is, 13
+OKay . Inside CFDSOlver, and gcomm is 3 ,comm is, 2
+OKay . Inside CFDSOlver, and gcomm is 10 ,comm is, 9
+OKay . Inside CFDSOlver, and gcomm is 5 ,comm is, 4
+OKay . Inside CFDSOlver, and gcomm is 6 ,comm is, 5
+OKay . Inside CFDSOlver, and gcomm is 9 ,comm is, 8
+
++------------------------------------------------------------------------------+
+| pyADFLOW Warning: 'zipperSurfaceFamily' option was not given. Using all wall |
+| boundary conditions for the zipper mesh.                                     |
++------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------+
+|  Switching to Aero Problem: test_mach0.19_alpha0.7498                |
++----------------------------------------------------------------------+
++----------------------------------------+
+|       All pyAeroTransi Options:        |
++----------------------------------------+
+{'adjointdamp0': 1.0,
+ 'adjointdivtol': 1000000.0,
+ 'adjointkspsolver': 'fgmres',
+ 'adjointpc': 'BJ',
+ 'adjointreltol': 1e-07,
+ 'adjointsolver': 'KSP',
+ 'damp0': 1.0,
+ 'damplb': 0.2,
+ 'lfsubspacesize': 40,
+ 'mdgroup': None,
+ 'monitorvars': ['cl', 'cd', 'tr'],
+ 'nadjointiter': 100,
+ 'nlfiter': 3,
+ 'outputdir': './output_aero',
+ 'printtiming': True,
+ 'reltol': 0.001,
+ 'resnormtr': 1000000000000.0,
+ 'restartadjoint': True,
+ 'saveiterations': True,
+ 'useaitkenacceleration': True,
+ 'writeiterationsolutions': False,
+ 'writesolution': True}
++----------------------------------------------------------------------+
+|  Switching to Aero Problem: test_mach0.19_alpha0.7498                |
++----------------------------------------------------------------------+
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+Traceback (most recent call last):
+  File "/home/rohit/Downloads/transition_2/transition/RANScoupledTransi/transition_adflow/SingleTransi2.py", line 257, in <module>
+    CFDSolver(atp)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 1367, in __call__
+    self.setAeroProblem(aeroProblem, releaseAdjointMemory)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3500, in setAeroProblem
+    self._setAeroProblemData(aeroProblem)
+  File "/home/rohit/trans_env/lib/python3.9/site-packages/adflowtransi/pyADflow.py", line 3586, in _setAeroProblemData
+    if "adflow" in AP.solverOptions:
+AttributeError: 'AeroTransiProblem' object has no attribute 'solverOptions'
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12238,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
