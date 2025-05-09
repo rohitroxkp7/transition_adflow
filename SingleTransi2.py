@@ -245,8 +245,8 @@ if 1==1:
   pos = np.array([0.5])
   CFDSolver.addSlices(spanDirection,pos,sliceType='absolute')
   transiSolver = None
-if flags[transiID]:
-  transiSolver = TransitionCalc(options=transiOptions,comm=comm)
+# if flags[transiID]:
+  transiSolver = TransitionCalc(options=transiOptions,comm=gcomm)
   # CFDSolver = None
 # define Aero transi solver
 AT = AeroTransi(CFDSolver, transiSolver,gcomm,options=lfOptions)
