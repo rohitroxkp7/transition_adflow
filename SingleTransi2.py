@@ -130,7 +130,7 @@ aeroOptions = {
   # Termination Criteria
   'L2Convergence':1e-8,
   'L2ConvergenceCoarse':1e-2,
-  'nCycles':10000,
+  'nCycles':100,
   'useblockettes':False,
   #Turb stuff
   # 'useqcr':True, # go 2 NASA tmr for more info (closer to exp??)
