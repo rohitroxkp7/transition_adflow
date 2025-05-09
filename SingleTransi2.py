@@ -254,7 +254,9 @@ AT = AeroTransi(CFDSolver, transiSolver,gcomm,options=lfOptions)
 #     Solve Functions:
 # ======================================================================
 funcs = {}
-AT(atp)
-AT.evalFunctions(atp, funcs)
+CFDSolver(atp)
+CFDSolver.evalFunctions(atp,funcs)
+# AT(atp)
+# AT.evalFunctions(atp, funcs)
 if(gcomm.rank == 0):
   print(funcs)
